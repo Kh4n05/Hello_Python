@@ -1,6 +1,6 @@
 
 #String Manipulation
-"""x= "Good Morning China"
+"""x= "Good Morning China!"
 print(x.upper())
 print(x.lower())
 print(x.isupper())
