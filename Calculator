@@ -1,0 +1,4 @@
+x,y=[float(x) for x in input("Enter x and y:").split(";")]
+def cube(x,y):
+    return x*x*x/y+y*y+3*x//y-(y**x)%3
+print(cube(x,y))
