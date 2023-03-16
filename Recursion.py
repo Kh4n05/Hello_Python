@@ -47,4 +47,15 @@ print(toBinary(x))"""
 
 x = int(input("Enter base10 number: "))
 print (toHex(x))"""
+from math import sqrt
+def isPrime (x: int, i = 2 ) -> bool:
+    if x == 0 or x == 1:
+        return False
+    if x%i == 0:
+        return False
+    if i**2 > x:
+        return True
+    return isPrime(x, i +1)
 
+x = int(input("Enter number: "))
+print(isPrime(x))
