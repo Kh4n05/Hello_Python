@@ -87,15 +87,14 @@ print (Recaman(n))'''
 
 def Recaman (n: int, list = [0]) -> list:
     if n == 0:
-        return 0
-    recur_term = Recaman(n-1)[len(Recaman(n-1))-1] - n
-    if recur_term > 0 or list[recur_term] == None:
-        list.append(recur_term)
         return list
+    recur_term = Recaman(n-1)[-1] - n
+    if recur_term > 0 and recur_term not in list:
+        list.append(recur_term)
     else:
         list.append(recur_term + 2*n)
     return list
-print (Recaman(10))
+print (Recaman(100))
 
 #Recaman(0) = 0
 #Recaman(n) = Recaman (n-1) - n if Recaman (n-1) - n > 0 or Recaman(n-1) - n != Recamn_List[]
