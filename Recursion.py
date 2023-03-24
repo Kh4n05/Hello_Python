@@ -47,6 +47,7 @@ print(toBinary(x))"""
 
 x = int(input("Enter base10 number: "))
 print (toHex(x))"""
+"""
 from math import sqrt
 def isPrime (x: int, i = 2 ) -> bool:
     if x == 0 or x == 1:
@@ -58,4 +59,41 @@ def isPrime (x: int, i = 2 ) -> bool:
     return isPrime(x, i +1)
 
 x = int(input("Enter number: "))
-print(isPrime(x))
+print(isPrime(x))"""
+
+"""def five_steps_Pattern (n: int) -> str :
+
+    if n <= 0: 
+        return str(n) 
+    return str(n) + "," + str(five_steps_Pattern(n-5)) + "," + str(n)
+          
+n = int(input("Enter number: "))
+print(five_steps_Pattern(n))"""
+
+'''def Recaman(n: int) -> int:
+   arr = [0]*n
+   print (arr)
+   for i in range (1,n):
+      recur_term = arr[i-1] - i
+      for j in range (0, i):
+         if arr[j] == recur_term or recur_term < 0:
+            recur_term = arr[i-1] + i
+            break
+         arr[i] = recur_term
+         return print(arr[i], end=", ")        
+
+n = int(input("Enter number: "))
+print (Recaman(n))'''
+
+def Recaman (n: int, list = [0]) -> list:
+    if n == 0:
+        return 0
+    recur_term = Recaman(n-1)[len(Recaman(n-1))-1] - n
+    if recur_term > 0 or list[recur_term] == None:
+        return list.append(recur_term)
+    return list.append(recur_term + 2*n)
+print (Recaman(10))
+
+#Recaman(0) = 0
+#Recaman(n) = Recaman (n-1) - n if Recaman (n-1) - n > 0 or Recaman(n-1) - n != Recamn_List[]
+# Else: Recaman(n) = Recaman (n-1) + n

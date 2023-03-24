@@ -29,26 +29,27 @@ pow(2,3)                #2^3
 print(max(1,2,3,4,5,6))"""
 
 #List Manipulation
-"""Scale = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "Delisle", "Newton", "Rèaumur", "Rømer"]
-print(Scale[2:])
-print(Scale[2:4])
-print(Scale[-2])
+Scale = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "Delisle", "Newton", "Rèaumur", "Rømer"]
+#print(Scale[2:])
+#print(Scale[2:4])
+#print(Scale[-2])
+print (Scale[len(Scale)-1])
 Scale[0] = "Kelcius"
 
 Scale_1 = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "Delisle", "Newton", "Rèaumur", "Rømer"]
 Scale_2 = ["ng", "mg", "g", "kg", "ton"]
 
-print(Scale_1)
+#print(Scale_1)
 Scale_1.extend(Scale_2)
-print(print('12'))
-print(Scale_1)
-print(Scale_2.append("dg"))  #cant print list
+#print(print('12'))
+#print(Scale_1)
+#print(Scale_2.append("dg"))  #cant print list
 Scale_1.insert(0,"Kha")
 Scale_1.pop()
 New_Scale = Scale_1
 ultra_list=[Scale_1, Scale_2, Scale, New_Scale]
-print(New_Scale)
-print(ultra_list)"""
+#print(New_Scale)
+#print(ultra_list)
 
 #Tupel Manipulation  ###Tupels are immutable
 """x=3
@@ -76,7 +77,7 @@ Month_converter = {
 }     
 #x = input("Enter first three letters of the month: ")
 #print(Month_converter.get(x, "Incorrect Input"))
-print (Month_converter.__len__())
+#print (Month_converter.__len__())
 #While loop
 """i=5
 while -1000<=i<=1000:
@@ -105,4 +106,16 @@ if guess_count == 3:
 else:
     print("You won")"""
 
+number_grid = [
+    [1, 2, 3, 4],
+    [4, 3, 2, 1],
+    [3.5, 3.5 , 1.5, 1.5],
+    [1.5, 1.5 , 3.5, 3.5]
+]
+'''for i in number_grid:
+    for j in range (4):
+        print (i[j])
 
+
+for i in range (30,2,-1):
+    print(i)'''
