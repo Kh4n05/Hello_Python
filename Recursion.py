@@ -90,8 +90,11 @@ def Recaman (n: int, list = [0]) -> list:
         return 0
     recur_term = Recaman(n-1)[len(Recaman(n-1))-1] - n
     if recur_term > 0 or list[recur_term] == None:
-        return list.append(recur_term)
-    return list.append(recur_term + 2*n)
+        list.append(recur_term)
+        return list
+    else:
+        list.append(recur_term + 2*n)
+    return list
 print (Recaman(10))
 
 #Recaman(0) = 0
