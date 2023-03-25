@@ -29,7 +29,7 @@ pow(2,3)                #2^3
 print(max(1,2,3,4,5,6))"""
 
 #List Manipulation
-Scale = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "Delisle", "Newton", "Rèaumur", "Rømer"]
+'''Scale = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "Delisle", "Newton", "Rèaumur", "Rømer"]
 #print(Scale[2:])
 #print(Scale[2:4])
 #print(Scale[-2])
@@ -49,7 +49,7 @@ Scale_1.pop()
 New_Scale = Scale_1
 ultra_list=[Scale_1, Scale_2, Scale, New_Scale]
 #print(New_Scale)
-#print(ultra_list)
+#print(ultra_list)'''
 
 #Tupel Manipulation  ###Tupels are immutable
 """x=3
@@ -119,3 +119,34 @@ number_grid = [
 
 for i in range (30,2,-1):
     print(i)'''
+
+#Try & Except: 
+'''def fibonacci (n:int) -> int:
+    if n < 2:
+        return 1
+    return fibonacci(n-1) + fibonacci(n-2)
+try:
+    n = int(input("Enter n: "))
+    print (fibonacci(n))
+except ValueError as Err:
+    print(Err)'''
+
+#Read Files:
+# HLCWE = open("C:\\Users\\USER\\Downloads\\[English] How Long Can We Live_ [DownSub.com].txt", "r") #use double slash // in python
+# open("C:\Users\USER\Downloads\[English] How Long Can We Live_ [DownSub.com].txt", "r+") read & write
+# open("C:\Users\USER\Downloads\[English] How Long Can We Live_ [DownSub.com].txt", "w") write - overwrite file, create a new file
+# open("C:\Users\USER\Downloads\[English] How Long Can We Live_ [DownSub.com].txt", "a") append new information
+# print(HLCWE.readable())
+# print (HLCWE.read())
+# print(HLCWE.readline())
+# print(HLCWE.readline())
+# print(HLCWE.readline())
+#print(HLCWE.readlines())
+
+#HLCWE.close() #close the function
+
+#Modules and PiP
+import Temperature_converter
+print (Temperature_converter.temperature_converter())
+# Search List of Python Modules for fuck_around_and_find_out
+# https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org go here at 3:38:10 to view detailed demonstration for pip
