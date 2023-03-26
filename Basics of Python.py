@@ -146,7 +146,14 @@ except ValueError as Err:
 #HLCWE.close() #close the function
 
 #Modules and PiP
-import Temperature_converter
-print (Temperature_converter.temperature_converter())
+# import Temperature_converter
+#print (Temperature_converter.temperature_converter())
 # Search List of Python Modules for fuck_around_and_find_out
 # https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org go here at 3:38:10 to view detailed demonstration for pip
+
+#Class & Objects
+from Test_Class import Food
+
+veggies_1 = Food(20, 0.5, 10, "vitA")
+#price, protein_content, caloric_content, significant_micros
+print(veggies_1)
