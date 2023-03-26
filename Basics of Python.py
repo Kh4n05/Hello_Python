@@ -153,7 +153,7 @@ except ValueError as Err:
 
 #Class & Objects
 from Test_Class import Food
-meat = Food()
+
 veggies_1 = Food(20, 0.5, 10, "vitA")
 #price, protein_content, caloric_content, significant_micros
-print(veggies_1.price)
+print(veggies_1)
